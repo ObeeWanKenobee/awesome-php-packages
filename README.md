@@ -51,15 +51,13 @@ That's all.
 			"username": "kenobee",
 			"password": "hellothere"
 		},
-		{
 		"bitbucket.org": {
-				"consumer-key": "myKey",
-				"consumer-secret": "mySecret"
-			}
+			"consumer-key": "myKey",
+			"consumer-secret": "mySecret"
 		},
 		"abandoned": true,
 		"apcu-autoloader": true,
-		"archive-format": tar,
+		"archive-format": "tar",
 		"autoloader-suffix": "nani",
 		"bin-compat": "full",
 		"bin-dir": "anywhere",
@@ -68,7 +66,7 @@ That's all.
 		"cache-repo-dir": "repos",
 		"cache-vcs-dir": "vcs",
 		"cache-files-ttl": 86400,
-		"cache-files-maxsize": 300MiB,
+		"cache-files-maxsize": "300MiB",
 		"cafile": "lo/ca/ti/on/he/he/cafile.ca",
 		"capath": "lo/ca/ti/on/he/he/cafile.ca",
 		"classmap-authoritative": true,
@@ -127,7 +125,7 @@ That's all.
 		},
 		"preferred-install": {
 			"*": "dist"
-		}
+		},
 		"fxp-asset": {
 			"enabled": false,
 			"installer-paths": {
