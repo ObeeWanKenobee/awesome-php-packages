@@ -6,323 +6,227 @@ This project started because I'm tired browsing around packagist looking for use
 PRs are welcome as long as the changes are of course useful.
 That's all.
 
-```json
-{
-	"name": "Awesome PHP Packages",
-	"homepage": "https://packagist.org/",
-	"description": "OpenSource Collective: Useful composer packages",
-	"version": "1.0.1",
-	"type": "project",
-	"authors": [
-		{
-			"name": "Emmanuel Lanuzo",
-			"homepage": "https://emmanuellanuzo.com",
-			"role": "Founder"
-		},
-		{
-			"name": "just add yo name here",
-			"homepage": "websiteofcourse.com",
-			"role": "Contributor",
-		}
-	],
-	"config": {
-		"github-oauth": {
-			"github.com": "abcdefghijklmnopqrstuvwxyz012345678910"
-		},
-		"github.com": {
-			"username": "kenobee",
-			"password": "hellothere"
-		},
-		"abandoned": true,
-		"apcu-autoloader": true,
-		"autoloader-suffix": "nani",
-		"bin-compat": "full",
-		"bin-dir": "anywhere",
-		"classmap-authoritative": true,
-		"disable-tls": false,
-		"discard-changes": true,
-		"github-expose-hostname": true,
-		"github-protocols": ["https", "ssh", "git"],
-		"htaccess-protect": true,
-		"optimize-autoloader": true,
-		"prepend-autoloader": true,
-		"process-timeout": 0,
-		"secure-http": true,
-		"sort-packages": true,
-		"store-auths": true,
-		"use-include-path": true,
-		"vendor-dir": "everywhere",
-		"platform": {
-			"php": "7.2.6",
-			"ext-amqp": "7.2.6",
-			"ext-apc": "7.2.6",
-			"ext-apcu": "7.2.6",
-			"ext-dba": "7.2.6",
-			"ext-ds": "7.2.6",
-			"ext-event": "7.2.6",
-			"ext-gd2": "7.2.6",
-			"ext-gmagick": "7.2.6",
-			"ext-gmp": "7.2.6",
-			"ext-imagick": "7.2.6",
-			"ext-intl": "7.2.6",
-			"ext-libsodium": "7.2.6",
-			"ext-maxminddb": "7.2.6",
-			"ext-mcrypt": "7.2.6",
-			"ext-memcache": "7.2.6",
-			"ext-memcached": "7.2.6",
-			"ext-mongo": "7.2.6",
-			"ext-mongodb": "7.2.6",
-			"ext-pcntl": "7.2.6",
-			"ext-phpiredis": "7.2.6",
-			"ext-posix": "7.2.6",
-			"ext-redis": "7.2.6",
-			"ext-soap": "7.2.6",
-			"ext-sodium": "7.2.6",
-			"ext-uopz": "7.2.6",
-			"ext-uuid": "7.2.6",
-			"ext-wincache": "7.2.6",
-			"ext-xcache": "7.2.6",
-			"ext-xdebug": "7.2.6",
-			"ext-xsl": "7.2.6"
-		},
-		"fxp-asset": {
-			"enabled": false,
-			"installer-paths": {
-				"npm-asset-library": "omaewa",
-				"bower-asset-library": "shindeiru"
-			}
-		}
-	},
-	"repositories": [
-		{
-			"type": "composer",
-			"url": "https://asset-packagist.org"
-		}
-	],
-	"minimum-stability": "dev",
-	"prefer-stable": true,
-	"require": {
-		"adaptive/php-text-difference": ">=1.0.3",
-		"adbario/php-dot-notation": ">=2",
-		"adbario/php-encrypter": ">=1",
-		"albaraam/php-gcm-apns": ">=1",
-		"ambroisemaupate/date-to-sentence": ">=1.2",
-		"appstract/lush-http": ">=0.5.4",
-		"arthurkushman/coossions": ">=1.1.1",
-		"atrapalo/urlcrypt": ">=1.0.1",
-		"azuyalabs/yasumi": ">=1.8",
-		"barracudanetworks/archivestream-php": ">=1.0.5",
-		"basekit/colorworks": ">=1",
-		"blobfolio/blob-common": ">=8",
-		"botman/botman": ">=2.3.3",
-		"cartalyst/converter": ">=3.0.1",
-		"cidram/cidram": ">=1.6",
-		"coduo/php-humanizer": ">=2",
-		"coduo/php-matcher": ">=3.1",
-		"cogpowered/finediff": ">=0.3.1",
-		"composer/ca-bundle": ">=1.1.1",
-		"danielstjules/php-pretty-datetime": "dev-master",
-		"danielstjules/stringy": ">=3.1",
-		"dater/dater": ">=2.0.3",
-		"dawood/phpchromepdf": ">=1.3",
-		"dawood/phpscreenrecorder": ">=1.4",
-		"dawood/wmb-scrapper": ">=1.1",
-		"defuse/php-encryption": ">=2.2",
-		"demi/safe-text": ">=1.0.2",
-		"diversen/http-send-file": ">=2.0.3",
-		"doctrine/dbal": ">=2.7",
-		"dragonmantank/cron-expression": ">=2.1",
-		"egulias/email-validator": ">=2.1.4",
-		"embed/embed": ">=3.3.3",
-		"endroid/qr-code": ">=3.2.12",
-		"evozon-php/tissue": "dev-master",
-		"fabpot/goutte": ">=3.2.2",
-		"facile-it/doctrine-mysql-come-back": ">=1.6.5",
-		"fightbulc/moment": ">=1.26.10",
-		"filp/whoops": ">=2.1.14",
-		"fzaninotto/faker": ">=1.7.1",
-		"genkgo/mail": ">=2.5.1",
-		"genkgo/push": ">=1",
-		"geoip2/geoip2": ">=2.9",
-		"giggsey/libphonenumber-for-php": ">=8.9.7",
-		"gladcodes/keygen": ">=1.1.1",
-		"gregwar/image": ">=2.0.22",
-		"guzzlehttp/guzzle": ">=6.3.3",
-		"guzzlehttp/promises": ">=1.3.1",
-		"guzzlehttp/psr7": ">=1.4.2",
-		"hashids/hashids": ">=3",
-		"hassankhan/config": ">=1.0.1",
-		"ilya/belt": ">=2.1.1",
-		"ilya/collection": ">=1",
-		"imagine/imagine": ">=0.7.1",
-		"imanee/imanee": ">=1.2.2",
-		"intervention/image": ">=2.4.2",
-		"intervention/imagecache": ">=2.3.3",
-		"ircmaxell/random-lib": ">=1.2",
-		"james-heinrich/getid3": "1.9.x-dev",
-		"jaybizzle/crawler-detect": ">=1.2.63",
-		"jbroadway/urlify": "1.1.0-stable",
-		"jenssegers/date": ">=3.4",
-		"jeroendesloovere/geolocation-php-api": ">=2.1",
-		"jeroendesloovere/vcard": ">=1.6",
-		"jkuchar/bigfiletools": ">=2",
-		"jkuchar/filedownloader": ">=2",
-		"josantonius/cookie": ">=1.1.6",
-		"josantonius/errorhandler": ">=1.1.8",
-		"josantonius/file": ">=1.1.7",
-		"josantonius/httpstatuscode": ">=1.1.6",
-		"josantonius/ip": ">=1.1.7",
-		"josantonius/mimetype": ">=1.1.7",
-		"josantonius/request": ">=1.1.7",
-		"josantonius/url": ">=1.2.1",
-		"jproof/jybrid": ">=0.7.7",
-		"jstewmc/detect-environment": ">=2",
-		"jstewmc/encode-file": ">=0.2",
-		"jstewmc/expand-abbreviations": ">=1",
-		"jstewmc/get-ip": ">=0.1.0",
-		"jstewmc/php-helpers": ">=0.1.1",
-		"jstewmc/validate-file-size": ">=0.1",
-		"kasp3r/link-preview": ">=2",
-		"katzien/php-mime-type": ">=2.1",
-		"khr/php-mcurl-client": ">=3.1",
-		"knplabs/knp-snappy": ">=1.0.4",
-		"lambdish/phunctional": ">=1.0.4",
-		"laravolt/avatar": ">=2.0.4",
-		"lasserafn/php-hexer": ">=1.05",
-		"lasserafn/php-initial-avatar-generator": ">=2.3",
-		"lasserafn/php-initials": ">=2.20",
-		"lasserafn/php-string-script-language": ">=0.1",
-		"league/flysystem": ">=1.0.45",
-		"league/flysystem-memory": ">=1",
-		"league/flysystem-sftp": ">=1.0.15",
-		"lightster/assetrinc": ">=0.4.1",
-		"lightster/named-sprintf": ">=0.1.2",
-		"limonte/google-safebrowsing": ">=0.1",
-		"limonte/spam-link-analyser": ">=0.1.1",
-		"maennchen/zipstream-php": ">=0.5.2",
-		"malios/php-to-ascii-table": ">=1.0.1",
-		"marc1706/fast-image-size": ">=1.1.4",
-		"marcelklehr/link-preview": ">=1.2.11",
-		"marcoazn89/http-wrapper": ">=2.1.1",
-		"markrogoyski/ipv4-subnet-calculator": ">=2.1",
-		"markrogoyski/math-php": ">=0.43",
-		"martijnc/php-csp": ">=1.0.2",
-		"matthiasmullie/minify": ">=1.3.60",
-		"mdf/php-url-resolver": "dev-master",
-		"merlinthemagic/mts": ">=1.1.1",
-		"microweber/screen": ">=1.0.6",
-		"misd/linkify": ">=1.1.2",
-		"mjaschen/phpgeo": ">=2.0.2",
-		"mobiledetect/mobiledetectlib": ">=2.8.32",
-		"monolog/monolog": ">=1.23",
-		"moontoast/math": ">=1.1.2",
-		"mormat/php-formula-interpreter": ">=1",
-		"mossadal/math-parser": ">=1.3.13",
-		"mostka/defer": "dev-master",
-		"mostka/hgtreader": "dev-master",
-		"mpdf/mpdf": ">=7.1",
-		"mpratt/relativetime": ">=1.5.4",
-		"mso/idna-convert": ">=1.1",
-		"nelexa/zip": ">=3.1.5",
-		"nesbot/carbon": ">=1.29.2",
-		"nette/http": ">=2.4.9",
-		"nette/mail": ">=2.4.5",
-		"nette/robot-loader": ">=3.0.x-dev",
-		"nette/utils": ">=2.5.2",
-		"nikic/fast-route": ">=1.3",
-		"nikic/phlexy": ">=0.1",
-		"noprotocol/php-mysql-aes-crypt": ">=2.0.1",
-		"ollyxar/websockets": ">=2.1.1",
-		"opis/data-store": ">=1.0.1",
-		"opis/pattern": ">=1",
-		"paragonie/certainty": ">=2.1",
-		"paragonie/constant_time_encoding": ">=2.2.2",
-		"paragonie/cookie": ">=3.2",
-		"paragonie/halite": ">=4.4.2",
-		"paragonie/ionizer": ">=0.3",
-		"paragonie/password_lock": ">=3.0.1",
-		"paragonie/random_compat": ">=2.0.15",
-		"paragonie/sodium_compat": ">=1.6.3",
-		"paragonie/stern": "dev-master",
-		"pavelsterba/http-exceptions": ">=1.1",
-		"peppeocchi/php-cron-scheduler": ">=2.3.2",
-		"php-curl-class/php-curl-class": ">=8.1",
-		"php-di/php-di": ">=5.4.6",
-		"phpcollection/phpcollection": ">=0.5",
-		"phpfanatic/clarifai": ">=2.0.1",
-		"phpmailer/phpmailer": ">=6.0.5",
-		"phpoffice/phppresentation": ">=0.9",
-		"phpoffice/phpspreadsheet": ">=1.3.1",
-		"phpoffice/phpword": ">=0.14",
-		"phpwhois/phpwhois": ">=4.2.5",
-		"piwik/device-detector": ">=3.10.2",
-		"pragmarx/countries": ">=0.5.8",
-		"ps/image-optimizer": ">=1.2",
-		"ptcong/easyrequest": ">=1.0.6",
-		"punic/punic": ">=3.1",
-		"ramsey/uuid": ">=3.7.3",
-		"regex-guard/regex-guard": ">=1.1",
-		"respect/validation": ">=1.1.16",
-		"rhubarbphp/module-csrfprotection": ">=1.0.5",
-		"rinvex/country": ">=3.1",
-		"rinvex/language": ">=2",
-		"rinvex/university": ">=1.1.1",
-		"roave/security-advisories": "dev-master",
-		"savvot/random": ">=0.3",
-		"sdboyer/frozone": ">=1.0.2",
-		"sdboyer/gliph": ">=0.7",
-		"sebastian/comparator": ">=3.0.1",
-		"sebastian/diff": ">=3.0.1",
-		"selvinortiz/flux": ">=0.5.3",
-		"selvinortiz/gossip": ">=1",
-		"sinergi/browser-detector": ">=6.1.2",
-		"sinergi/token": ">=0.1",
-		"smalot/pdfparser": ">=0.12",
-		"smsapi/php-client": ">=1.8.7",
-		"solaris/php-moon-phase": ">=1.1.1",
-		"spatie/browsershot": ">=3.22.1",
-		"spatie/email-concealer": ">=1.0.1",
-		"spatie/emoji": ">=1.0.6",
-		"spatie/geocoder": ">=3.3.1",
-		"spatie/image-optimizer": ">=1.0.14",
-		"spatie/opening-hours": ">=1.6",
-		"spatie/pdf-to-image": ">=1.8",
-		"spatie/pdf-to-text": ">=1.1",
-		"spatie/regex": ">=1.3",
-		"spatie/schema-org": ">=1.6",
-		"spatie/ssl-certificate": ">=1.12.7",
-		"spatie/url": ">=1.3",
-		"spatie/url-signer": ">=1.0.2",
-		"spomky-labs/base64url": ">=1.0.2",
-		"stefangabos/zebra_curl": ">=1.3.5",
-		"stefangabos/zebra_session": ">=2.1.8",
-		"stil/gif-endec": ">=0.2",
-		"sun/country": ">=1.3",
-		"sun/filesystem": ">=1.3",
-		"swiftmailer/swiftmailer": ">=6.0.2",
-		"symfony/polyfill-util": ">=1.8",
-		"tburry/pquery": ">=1.1.1",
-		"theiconic/name-parser": ">=1.2",
-		"theiconic/php-ga-measurement-protocol": ">=2.7.1",
-		"tracy/tracy": ">=2.5",
-		"ua-parser/uap-php": ">=3.5",
-		"validator/livr": "dev-master",
-		"vanilla/htmlawed": ">=2.2.4.1",
-		"victorybiz/geoip-location": ">=1.0.2",
-		"vlucas/valitron": ">=1.4.3",
-		"voku/anti-xss": ">=4.1.1",
-		"voku/email-check": ">=3",
-		"voku/html-min": ">=3.0.3",
-		"voku/portable-utf8": ">=5.0.6",
-		"warriorxk/phpwebsockets": ">=2.0.1",
-		"webmozart/assert": ">=1.3",
-		"webmozart/path-util": ">=2.3",
-		"whichbrowser/parser": ">=2.0.32",
-		"yetiforce/csrf-magic": ">=1.0.8",
-		"yzalis/identicon": ">=1.2",
-		"zendframework/zendframework": ">=3",
-		"zendframework/zendservice-recaptcha": ">=3.1",
-		"zhenhao/smaz": ">=1.1.1"
-	}
-}
-```
+- [adaptive/php-text-difference](https://packagist.org/packages/adaptive/php-text-difference)
+- [adbario/php-dot-notation](https://packagist.org/packages/adbario/php-dot-notation)
+- [adbario/php-encrypter](https://github.com/adbario/php-encrypter)
+- [albaraam/php-gcm-apns](https://github.com/albaraam/php-gcm-apns)
+- [ambroisemaupate/date-to-sentence](https://packagist.org/packages/ambroisemaupate/date-to-sentence)
+- [appstract/lush-http](https://packagist.org/packages/appstract/lush-http)
+- [arthurkushman/coossions](https://github.com/arthurkushman/coossions)
+- [atrapalo/urlcrypt](https://github.com/atrapalo/URLcrypt)
+- [azuyalabs/yasumi](https://github.com/azuyalabs/yasumi)
+- [barracudanetworks/archivestream-php](https://github.com/barracudanetworks/ArchiveStream-php)
+- [basekit/colorworks](https://github.com/basekit/ColorWorks)
+- [blobfolio/blob-common](https://github.com/Blobfolio/blob-common)
+- [botman/botman](https://github.com/botman/botman)
+- [cartalyst/converter](https://cartalyst.com/manual/converter)
+- [cidram/cidram](https://github.com/CIDRAM/CIDRAM)
+- [coduo/php-humanizer](https://github.com/coduo/php-humanizer)
+- [coduo/php-matcher](https://github.com/coduo/php-matcher)
+- [cogpowered/finediff](https://github.com/cogpowered/FineDiff)
+- [composer/ca-bundle](https://github.com/composer/ca-bundle)
+- [danielstjules/php-pretty-datetime](https://github.com/danielstjules/php-pretty-datetime)
+- [danielstjules/stringy](https://github.com/danielstjules/Stringy)
+- [dater/dater](https://packagist.org/packages/dater/dater)
+- [dawood/phpchromepdf](https://packagist.org/packages/dawood/phpchromepdf)
+- [dawood/phpscreenrecorder](https://packagist.org/packages/dawood/phpscreenrecorder)
+- [dawood/wmb-scrapper](https://github.com/daudmalik06/WMB-Scrapper)
+- [defuse/php-encryption](https://packagist.org/packages/defuse/php-encryption)
+- [demi/safe-text](https://packagist.org/packages/demi/safe-text)
+- [diversen/http-send-file](https://github.com/diversen/http-send-file)
+- [doctrine/dbal](https://github.com/doctrine/dbal)
+- [dragonmantank/cron-expression](https://github.com/dragonmantank)
+- [egulias/email-validator](https://github.com/egulias/EmailValidator)
+- [embed/embed](https://packagist.org/packages/embed/embed)
+- [endroid/qr-code](https://packagist.org/packages/endroid/qrcode)
+- [evozon-php/tissue](https://packagist.org/packages/evozon-php/)
+- [fabpot/goutte](https://packagist.org/packages/fabpot/goutte)
+- [facile-it/doctrine-mysql-come-back](https://packagist.org/packages/facile-it/doctrine-mysql-come-back)
+- [fightbulc/moment](https://packagist.org/packages/fightbulc/moment)
+- [filp/whoops](https://github.com/filp/whoops)
+- [fzaninotto/faker](https://packagist.org/packages/fzaninotto/faker)
+- [genkgo/mail](https://github.com/genkgo/mail)
+- [genkgo/push](https://github.com/genkgo/push)
+- [geoip2/geoip2](https://github.com/maxmind/GeoIP2-php)
+- [giggsey/libphonenumber-for-php](https://packagist.org/packages/giggsey/libphonenumber-for-php)
+- [gladcodes/keygen](https://packagist.org/packages/gladcodes/keygen)
+- [gregwar/image](https://github.com/Gregwar/Image)
+- [guzzlehttp/guzzle](https://packagist.org/packages/guzzlehttp/guzzle)
+- [guzzlehttp/promises](https://github.com/guzzle/promises)
+- [guzzlehttp/psr7](https://packagist.org/packages/guzzlehttp/psr7)
+- [hashids/hashids](https://packagist.org/packages/hashids/hashids)
+- [hassankhan/config](https://packagist.org/packages/hassankhan/config)
+- [ilya/belt](https://packagist.org/packages/ilya/belt)
+- [ilya/collection](https://packagist.org/packages/ilya/collection)
+- [imagine/imagine](#)
+- [imanee/imanee](https://github.com/imanee/imanee)
+- [intervention/image](image.intervention.io/)
+- [intervention/imagecache](https://github.com/Intervention/imagecache)
+- [ircmaxell/random-lib](https://github.com/ircmaxell/RandomLib)
+- [james-heinrich/getid3](https://packagist.org/packages/james-heinrich/getid3)
+- [jaybizzle/crawler-detect](https://github.com/JayBizzle/Crawler-Detect)
+- [jbroadway/urlify](https://github.com/jbroadway/urlify)
+- [jenssegers/date](https://packagist.org/packages/jenssegers/date)
+- [jeroendesloovere/geolocation-php-api](https://packagist.org/packages/jeroendesloovere/geolocation-php-api)
+- [jeroendesloovere/vcard](https://packagist.org/packages/jeroendesloovere/vcard)
+- [jkuchar/bigfiletools](https://packagist.org/packages/jkuchar/bigfiletools)
+- [jkuchar/filedownloader](https://packagist.org/packages/jkuchar/filedownloader)
+- [josantonius/cookie](https://packagist.org/packages/josantonius/cookie)
+- [josantonius/errorhandler](https://packagist.org/packages/josantonius/errorhandler)
+- [josantonius/file](https://packagist.org/packages/josantonius/file)
+- [josantonius/httpstatuscode](https://github.com/Josantonius/PHP-HTTPStatusCode)
+- [josantonius/ip](https://packagist.org/packages/josantonius/ip)
+- [josantonius/mimetype](https://github.com/Josantonius/PHP-MimeType)
+- [josantonius/request](https://packagist.org/packages/josantonius/request)
+- [josantonius/url](https://packagist.org/packages/josantonius/url)
+- [jproof/jybrid](#)
+- [jstewmc/detect-environment](https://packagist.org/packages/jstewmc/detect-environment)
+- [jstewmc/encode-file](#)
+- [jstewmc/expand-abbreviations](https://github.com/jstewmc/expand-abbreviations)
+- [jstewmc/get-ip](#)
+- [jstewmc/php-helpers](https://github.com/jstewmc/php-helpers)
+- [jstewmc/validate-file-size](#)
+- [kasp3r/link-preview](https://github.com/kasp3r/link-preview)
+- [katzien/php-mime-type](https://packagist.org/packages/katzien/php-mime-type)
+- [khr/php-mcurl-client](https://packagist.org/packages/khr/php-mcurl-client)
+- [knplabs/knp-snappy](https://github.com/KnpLabs/snappy)
+- [lambdish/phunctional](https://github.com/Lambdish/phunctional)
+- [laravolt/avatar](https://github.com/laravolt/avatar)
+- [lasserafn/php-hexer](https://packagist.org/packages/lasserafn/php-hexer)
+- [lasserafn/php-initial-avatar-generator](	https://packagist.org/packages/lasserafn/php-initial-avatar-generator)
+- [lasserafn/php-initials](https://github.com/LasseRafn/php-initials)
+- [lasserafn/php-string-script-language](https://github.com/LasseRafn/php-string-script-language)
+- [league/flysystem](packagist.org/packages/league/flysystem)
+- [league/flysystem-memory](https://github.com/thephpleague/flysystem-memory)
+- [league/flysystem-sftp](https://packagist.org/packages/league/flysystem-sftp)
+- [lightster/assetrinc](https://packagist.org/packages/lightster/assetrinc)
+- [lightster/named-sprintf](https://packagist.org/packages/lightster/named-sprintf)
+- [limonte/google-safebrowsing](https://github.com/limonte/google-safebrowsing)
+- [limonte/spam-link-analyser](https://github.com/limonte/spam-link-analyser)
+- [maennchen/zipstream-php](https://github.com/maennchen/ZipStream-PHP)
+- [malios/php-to-ascii-table](https://packagist.org/packages/malios/php-to-ascii-table)
+- [marc1706/fast-image-size](https://github.com/marc1706/fast-image-size)
+- [marcelklehr/link-preview](https://repo.packagist.org/packages/marcelklehr/link-preview)
+- [marcoazn89/http-wrapper](https://packagist.org/packages/marcoazn89/http-wrapper)
+- [markrogoyski/ipv4-subnet-calculator](https://github.com/markrogoyski/ipv4-subnet-calculator-php)
+- [markrogoyski/math-php](https://github.com/markrogoyski/math-php)
+- [martijnc/php-csp](https://packagist.org/packages/martijnc/php-csp)
+- [matthiasmullie/minify](https://packagist.org/packages/matthiasmullie/minify)
+- [mdf/php-url-resolver](https://packagist.org/packages/mdf/php-url-resolver)
+- [merlinthemagic/mts](https://github.com/merlinthemagic/MTS)
+- [microweber/screen](https://github.com/microweber/screen)
+- [misd/linkify](https://packagist.org/packages/misd/linkify)
+- [mjaschen/phpgeo](https://github.com/mjaschen/phpgeo)
+- [mobiledetect/mobiledetectlib](https://packagist.org/packages/mobiledetect/mobiledetectlib)
+- [monolog/monolog](https://packagist.org/packages/monolog/monolog)
+- [moontoast/math](https://packagist.org/packages/moontoast/math)
+- [mormat/php-formula-interpreter](https://packagist.org/packages/mormat/php-formula-interpreter)
+- [mossadal/math-parser](https://packagist.org/packages/mossadal/math-parser)
+- [mostka/defer](https://packagist.org/packages/mostka/defer)
+- [mostka/hgtreader](#)
+- [mpdf/mpdf](https://packagist.org/packages/mpdf/mpdf)
+- [mpratt/relativetime](https://packagist.org/packages/mpratt/relativetime)
+- [mso/idna-convert](https://packagist.org/packages/mso/idna-convert)
+- [nelexa/zip](https://packagist.org/packages/nelexa/zip)
+- [nesbot/carbon](https://carbon.nesbot.com)
+- [nette/http](https://packagist.org/packages/nette/http)
+- [nette/mail](https://packagist.org/packages/nette/mail)
+- [nette/robot-loader](https://packagist.org/packages/nette/robot-loader)
+- [nette/utils](https://packagist.org/packages/nette/utils)
+- [nikic/fast-route](https://github.com/nikic/FastRoute)
+- [nikic/phlexy](https://github.com/nikic/Phlexy)
+- [noprotocol/php-mysql-aes-crypt](https://github.com/noprotocol/php-mysql-aes-crypt)
+- [ollyxar/websockets](https://github.com/ollyxar/websockets)
+- [opis/data-store](https://github.com/opis/data-store)
+- [opis/pattern](https://packagist.org/packages/opis/pattern)
+- [paragonie/certainty](https://github.com/paragonie/certainty)
+- [paragonie/constant_time_encoding](https://github.com/paragonie/constant_time_encoding)
+- [paragonie/cookie](https://packagist.org/packages/paragonie/cookie)
+- [paragonie/halite](https://packagist.org/packages/paragonie/halite)
+- [paragonie/ionizer](https://github.com/paragonie/ionizer)
+- [paragonie/password_lock](https://packagist.org/packages/paragonie/password_lock)
+- [paragonie/random_compat](https://github.com/paragonie/random_compat)
+- [paragonie/sodium_compat](https://packagist.org/packages/paragonie/sodium_compat)
+- [paragonie/stern](https://github.com/paragonie/stern)
+- [pavelsterba/http-exceptions](https://github.com/pavelsterba/http-exceptions)
+- [peppeocchi/php-cron-scheduler](https://packagist.org/packages/peppeocchi/php-cron-scheduler)
+- [php-curl-class/php-curl-class](https://github.com/php-curl-class/php-curl-class)
+- [php-di/php-di](https://github.com/PHP-DI/PHP-DI)
+- [phpcollection/phpcollection](https://packagist.org/packages/phpcollection/phpcollection)
+- [phpfanatic/clarifai](https://packagist.org/packages/phpfanatic/clarifai)
+- [phpmailer/phpmailer](https://github.com/PHPMailer/PHPMailer/)
+- [phpoffice/phppresentation](https://github.com/PHPOffice/PHPPresentation)
+- [phpoffice/phpspreadsheet](https://github.com/PHPOffice/PhpSpreadsheet)
+- [phpoffice/phpword](https://github.com/PHPOffice)
+- [phpwhois/phpwhois](https://github.com/phpWhois/phpWhois)
+- [piwik/device-detector](https://packagist.org/packages/piwik/device-detector)
+- [pragmarx/countries](https://pragmarx.com)
+- [ps/image-optimizer](https://packagist.org/packages/ps/image-optimizer)
+- [ptcong/easyrequest](https://packagist.org/packages/ptcong/easyrequest)
+- [punic/punic](https://github.com/punic/punic)
+- [ramsey/uuid](https://github.com/ramsey/uuid)
+- [regex-guard/regex-guard](https://github.com/marcioAlmada/regex-guard)
+- [respect/validation](https://github.com/Respect/Validation)
+- [rhubarbphp/module-csrfprotection](https://packagist.org/packages/rhubarbphp/module-csrfprotection)
+- [rinvex/country](https://packagist.org/packages/rinvex/country)
+- [rinvex/language](https://github.com/rinvex/language)
+- [rinvex/university](https://github.com/rinvex/university)
+- [roave/security-advisories](https://github.com/Roave/SecurityAdvisories)
+- [savvot/random](https://github.com/savvot/random)
+- [sdboyer/frozone](https://github.com/sdboyer/frozone)
+- [sdboyer/gliph](https://github.com/sdboyer/gliph)
+- [sebastian/comparator](https://github.com/sebastianbergmann/comparator)
+- [sebastian/diff](https://github.com/sebastianbergmann/diff)
+- [selvinortiz/flux](https://github.com/selvinortiz/flux)
+- [selvinortiz/gossip](https://github.com/selvinortiz/gossip)
+- [sinergi/browser-detector](https://github.com/sinergi/php-browser-detector/)
+- [sinergi/token](https://packagist.org/packages/sinergi/token)
+- [smalot/pdfparser](https://github.com/smalot/pdfparser)
+- [smsapi/php-client](#)
+- [solaris/php-moon-phase](https://github.com/solarissmoke/php-moon-phase)
+- [spatie/browsershot](https://github.com/spatie/browsershot)
+- [spatie/email-concealer](https://github.com/spatie/email-concealer)
+- [spatie/emoji](https://github.com/spatie/emoji/)
+- [spatie/geocoder](https://github.com/spatie/geocoder)
+- [spatie/image-optimizer](https://github.com/spatie/image-optimizer)
+- [spatie/opening-hours](https://github.com/spatie/opening-hours)
+- [spatie/pdf-to-image](https://github.com/spatie/pdf-to-image)
+- [spatie/pdf-to-text](https://github.com/spatie/pdf-to-text)
+- [spatie/regex](https://github.com/spatie/regex)
+- [spatie/schema-org](https://github.com/spatie/schema-org)
+- [spatie/ssl-certificate](https://github.com/spatie/ssl-certificate)
+- [spatie/url](https://github.com/spatie/url)
+- [spatie/url-signer](https://github.com/spatie/laravel-url-signer)
+- [spomky-labs/base64url](https://github.com/Spomky-Labs/base64url)
+- [stefangabos/zebra_curl](https://github.com/stefangabos/Zebra_cURL)
+- [stefangabos/zebra_session](https://github.com/stefangabos/Zebra_Session)
+- [stil/gif-endec](https://github.com/stil/gif-endec)
+- [sun/country](#)
+- [sun/filesystem](#)
+- [swiftmailer/swiftmailer](https://github.com/swiftmailer/swiftmailer)
+- [symfony/polyfill-util](https://github.com/symfony/polyfill-util)
+- [tburry/pquery](https://github.com/tburry/pquery)
+- [theiconic/name-parser](theiconic/name-parser)
+- [theiconic/php-ga-measurement-protocol](https://github.com/theiconic/php-ga-measurement-protocol)
+- [tracy/tracy](https://github.com/nette/tracy)
+- [ua-parser/uap-php](https://github.com/ua-parser/uap-php)
+- [validator/livr](https://github.com/koorchik/js-validator-livr)
+- [vanilla/htmlawed](https://github.com/vanilla/htmlawed)
+- [victorybiz/geoip-location](https://github.com/victorybiz/geoip-location)
+- [vlucas/valitron](https://github.com/vlucas/valitron)
+- [voku/anti-xss](https://github.com/voku/anti-xss)
+- [voku/email-check](https://github.com/voku/email-check)
+- [voku/html-min](https://packagist.org/packages/voku/html-min)
+- [voku/portable-utf8](https://github.com/voku/portable-utf8)
+- [warriorxk/phpwebsockets](https://github.com/WarriorXK/PHPWebSockets)
+- [webmozart/assert](https://github.com/webmozart/assert)
+- [webmozart/path-util](https://github.com/webmozart/path-util)
+- [whichbrowser/parser](https://github.com/WhichBrowser/Parser-PHP)
+- [yetiforce/csrf-magic](https://packagist.org/packages/yetiforce/csrf-magic)
+- [yzalis/identicon](https://github.com/yzalis/Identicon)
+- [zendframework/zendframework](https://github.com/zendframework/zendframework)
+- [zendframework/zendservice-recaptcha](https://github.com/zendframework/ZendService_ReCaptcha)
+- [zhenhao/smaz](https://github.com/zhenhao/smaz.php)
+
+## TODO
+Group Libraries By Roles
