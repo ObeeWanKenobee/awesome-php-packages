@@ -3,7 +3,11 @@ Awesome Collective: Useful composer packages
 
 ### *Ahem.. out check. 0.. 1.. 2.. 3..
 This project started because I'm tired browsing around packagist looking for useful packages.
+
 PRs are welcome as long as the changes are of course useful.
+
+This project also contains tips and tricks about composer.
+
 That's all.
 
 - [adaptive/php-text-difference](https://packagist.org/packages/adaptive/php-text-difference)
@@ -229,4 +233,10 @@ That's all.
 - [zhenhao/smaz](https://github.com/zhenhao/smaz.php)
 
 ## TODO
-Group Libraries By Roles
+- Group Libraries By Roles
+
+#### Priorities
+- Utilities
+- Security
+
+#### Special thanks to -> Composer (of course), Drupal's composer.json, Laravel's composer.json, and so on. // Just add some copyrights in here so I wont get into trouble someday
