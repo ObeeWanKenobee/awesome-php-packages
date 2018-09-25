@@ -3,16 +3,24 @@ Awesome Collective: Useful composer packages
 
 ### *Ahem.. out check. 0.. 1.. 2.. 3..
 This project started because I'm tired browsing around packagist looking for useful packages.
+
 PRs are welcome as long as the changes are of course useful.
+
+This project also contains tips and tricks about composer.
+
 That's all.
+
+#### Special thanks to -> Composer (of course), Drupal's composer.json, Laravel's composer.json, and so on. // Just add some copyrights in here so I wont get into trouble someday
 
 ```json
 {
 	"name": "Awesome PHP Packages",
 	"homepage": "https://packagist.org/",
+	"keywords": ["Awesome list", "Curated list", "php"],
 	"description": "OpenSource Collective: Useful composer packages",
 	"version": "1.0.1",
 	"type": "project",
+	"license": "The Unlicensed",
 	"authors": [
 		{
 			"name": "Emmanuel Lanuzo",
@@ -29,21 +37,53 @@ That's all.
 		"github-oauth": {
 			"github.com": "abcdefghijklmnopqrstuvwxyz012345678910"
 		},
+		"gitlab-oauth": {
+			"gitlab.com": "abcdefghijklmnopqrstuvwxyz012345678910"
+		},
+		"gitlab-token": {
+			"github.com": "abcdefghijklmnopqrstuvwxyz012345678910"
+		},
 		"github.com": {
 			"username": "kenobee",
 			"password": "hellothere"
 		},
+		"gitlab.com": {
+			"username": "kenobee",
+			"password": "hellothere"
+		},
+		{
+		"bitbucket.org": {
+				"consumer-key": "myKey",
+				"consumer-secret": "mySecret"
+			}
+		},
 		"abandoned": true,
 		"apcu-autoloader": true,
+		"archive-format": tar,
 		"autoloader-suffix": "nani",
 		"bin-compat": "full",
 		"bin-dir": "anywhere",
+		"cache-dir": "caches",
+		"cache-files-dir": "files",
+		"cache-repo-dir": "repos",
+		"cache-vcs-dir": "vcs",
+		"cache-files-ttl": 86400,
+		"cache-files-maxsize": 300MiB,
+		"cafile": "lo/ca/ti/on/he/he/cafile.ca",
+		"capath": "lo/ca/ti/on/he/he/cafile.ca",
 		"classmap-authoritative": true,
+		"data-dir": "somewhere/deep",
 		"disable-tls": false,
 		"discard-changes": true,
 		"github-expose-hostname": true,
 		"github-protocols": ["https", "ssh", "git"],
 		"htaccess-protect": true,
+		"http-basic": {"example.org": {
+				"username": "oneesan",
+				"password": "labsoniichan"
+			}
+		},
+		"notify-on-install": true,
 		"optimize-autoloader": true,
 		"prepend-autoloader": true,
 		"process-timeout": 0,
@@ -85,6 +125,9 @@ That's all.
 			"ext-xdebug": "7.2.6",
 			"ext-xsl": "7.2.6"
 		},
+		"preferred-install": {
+			"*": "dist"
+		}
 		"fxp-asset": {
 			"enabled": false,
 			"installer-paths": {
@@ -97,8 +140,54 @@ That's all.
 		{
 			"type": "composer",
 			"url": "https://asset-packagist.org"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com"
+		},
+		{
+			"type": "vcs",
+			"url": "https://gitlab.com"
+		},
+		{
+			"type": "vcs",
+			"url": "https://bitbucket.org"
 		}
 	],
+	"extra": {
+		"_readme": [
+			"readme niichan"
+		],
+		"merge-plugin": {
+			"include": [
+				"another/one.json",
+				"composer2.json"
+			],
+			"recurse": true,
+			"replace": false,
+			"merge-extra": false
+		},
+		"installer-paths": {
+			"core": ["type:drupal-core"],
+				"modules/contrib/{$name}": ["type:drupal-module"]
+			}
+		},
+		"autoload": {
+			"psr-4": {
+				"Name\\space\\Class\\": "lo/ca/ti/on"
+			},
+			"classmap": [
+				"phps/php.php"
+			]
+		},
+		"scripts": {
+			"pre-autoload-dump": "Name\\space\\Class\\Composer::preAutoloadDump",
+			"post-autoload-dump": "Name\\space\\Class\\Composer::ensureHtaccess",
+			"post-package-install": "Name\\space\\Class\\Composer::vendorTestCodeCleanup",
+			"phpcs": "phpcs --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/coder/coder_sniffer --",
+			"phpcbf": "phpcbf --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/coder/coder_sniffer --"
+		}
+	}
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"require": {
@@ -323,6 +412,12 @@ That's all.
 		"zendframework/zendframework": ">=3",
 		"zendframework/zendservice-recaptcha": ">=3.1",
 		"zhenhao/smaz": ">=1.1.1"
+	},
+	"require-dev": {
+		"phpunit": ">=7"
+	},
+	"replace": {
+		"laravel/laravel": ">=5.7"
 	}
 }
 ```
