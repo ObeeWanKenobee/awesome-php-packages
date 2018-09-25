@@ -235,8 +235,13 @@ That's all.
 ## TODO
 - Group Libraries By Roles
 
-#### Priorities
+## Priorities
 - Utilities
 - Security
 
-#### Special thanks to -> Composer (of course), Drupal's composer.json, Laravel's composer.json, and so on. // Just add some copyrights in here so I wont get into trouble someday
+## Special thanks to:
+- Composer (of course)
+- Drupal's composer.json
+- Laravel's composer.json
+- and so on.
+- Just add some copyrights in here so I wont get into trouble someday
